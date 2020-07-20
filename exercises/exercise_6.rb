@@ -9,3 +9,42 @@ puts "Exercise 6"
 puts "----------"
 
 # Your code goes here ...
+
+Store.has_many :employees
+Employee.belongs_to :store
+
+@store1.employees.create(
+  first_name: "Khurram",
+  last_name: "Virani",
+  hourly_rate: 60
+)
+
+@store1.employees.create(
+  first_name: "Big",
+  last_name: "Bird",
+  hourly_rate: 60
+)
+
+@store1.employees.create(
+  first_name: "Oscar",
+  last_name: "the Grouch",
+  hourly_rate: 60
+)
+
+@store2.employees.create(
+  first_name: "Count",
+  last_name: "Von Count",
+  hourly_rate: 60
+)
+
+@store2.employees.create(
+  first_name: "Cookie",
+  last_name: "Monster",
+  hourly_rate: 60
+)
+
+@store2.employees.create(
+  first_name: "Snuffle",
+  last_name: "Upagus",
+  hourly_rate: 60
+)
